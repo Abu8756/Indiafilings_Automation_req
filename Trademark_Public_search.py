@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-from waitress import serve
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
