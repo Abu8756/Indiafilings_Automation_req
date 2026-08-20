@@ -4,7 +4,7 @@ from Trademark_Public_search import TrademarkSession , push
 import requests
 import uuid
 app = Flask(__name__)
-
+SESSIONS = {}  # session_id -> TrademarkSession
 
 @app.route("/", methods=["GET"])
 def home():

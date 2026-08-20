@@ -17,7 +17,7 @@ app = Flask(__name__)
 ES_URL = "https://search-tmsearch-ubyuytn3nafypcaczxpjtrgmam.ap-south-1.es.amazonaws.com/v3/trade_mark"
 BASE = "https://tmrsearch.ipindia.gov.in/tmrpublicsearch"
 TIMEOUT = 15  # seconds; fail fast instead of hanging forever when the portal is unreachable
-SESSIONS = {}  # session_id -> TrademarkSession
+
 
 
 
