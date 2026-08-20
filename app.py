@@ -1,11 +1,7 @@
-from flask import Flask, request, jsonify, render_template
-from flask_cors import CORS
+from flask import Flask, request, jsonify
 
-
-#from trademark import IPIndiaTMR as ip
 app = Flask(__name__)
-# Enable CORS for all routes
-CORS(app)
+
 
 
 @app.route("/", methods=["GET"])
