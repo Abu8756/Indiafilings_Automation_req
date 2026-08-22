@@ -3,7 +3,11 @@ from income_tax_login import IncomeTaxLogin
 from Trademark_Public_search import TrademarkSession , push
 import requests
 import uuid
+from flask_cors import CORS
+
 app = Flask(__name__)
+
+CORS(app)
 SESSIONS = {}  # session_id -> TrademarkSession
 
 @app.route("/", methods=["GET"])
